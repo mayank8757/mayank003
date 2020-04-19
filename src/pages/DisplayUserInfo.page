@@ -1,0 +1,10 @@
+<apex:page sidebar="false" showHeader="false" >
+    <apex:pageBlock title="User Info">
+    	<apex:pageBlockSection >
+            ({! IF($User.isActive, $User.Username, 'inactive') })
+
+            <p> Today's Date is {! TODAY() } </p>
+			<p> Next week it will be {! TODAY() + 7 } </p>
+		</apex:pageBlockSection>
+    </apex:pageBlock>    
+</apex:page>

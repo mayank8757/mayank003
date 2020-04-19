@@ -1,0 +1,12 @@
+<apex:page controller="ClassName">
+    <apex:form >
+        <apex:selectList value="{!choosenObject}" size="1">
+              <apex:selectOptions value="{!objects}"></apex:selectOptions>
+        </apex:selectList>
+<br/>
+       <!-- <apex:commandbutton value="Query" action="{!queryMe}" rerender="output"/>
+         <apex:dataList id="output" value="{!records}" var="r">
+         {!r}
+       </apex:dataList>-->
+    </apex:form>
+</apex:page>

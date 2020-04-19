@@ -1,0 +1,15 @@
+<apex:page controller="objectList" >
+  <apex:form >
+        <apex:pageBlock title="Record Types">
+    <apex:pageBlockSection columns="2">
+    <apex:SelectList value="{!val}" size="1">
+      <apex:selectOptions value="{!Name}"></apex:selectOptions>
+       <!-- <apex:actionSupport action="{!recordType}" event="onchange"/>-->
+
+    </apex:SelectList>
+    	
+       
+        </apex:pageBlockSection>
+</apex:pageBlock>
+  </apex:form>
+</apex:page>

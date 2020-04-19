@@ -1,0 +1,30 @@
+<apex:page >
+    <style>
+        .fontstyle{color:blue}
+    </style>
+    
+    <script>
+        function MyJavaFunction(InputID)
+        {
+            var inputValue = document.getElementById(InputID).value;
+            
+            if(inputValue =='')
+            {
+                alert('You did not enter any value in the input box');
+            }
+            else
+                alert('You enterd :: '+inputValue);
+        }
+      </script>
+      
+      <apex:form >
+          <apex:pageBlock >Input Here
+              <apex:inputText id="InputID"/>
+              <apex:commandButton onclick="MyJavaFunction('{!$Component.InputID}')" value="Submit"/>
+          </apex:pageBlock>
+      </apex:form>
+      
+          <apex:pageBlock >
+              <apex:outputText value="This exp is for test" style="fontstyle"/>
+              </apex:pageBlock>
+                </apex:page>

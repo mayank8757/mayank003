@@ -1,0 +1,11 @@
+<apex:page controller="objectController">
+    <apex:form >
+         <apex:selectList value="{!object_Name}" size="1">
+          <apex:selectOptions value="{!options_Objects}"/>
+              <apex:actionSupport action="{!childList}" event="onchange"/>
+         </apex:selectList>
+         <apex:selectList >
+              <apex:selectOptions value="{!options_Childs}"/>
+         </apex:selectList>
+    </apex:form>
+</apex:page>
